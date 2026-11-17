@@ -1,0 +1,238 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #eeeeee;
+    color: #333333;
+    line-height: 1.6;
+    padding: 30px 15px;
+}
+
+.resume {
+    max-width: 900px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 45px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* CABEÇALHO */
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 22px;
+    padding-bottom: 30px;
+    border-bottom: 2px solid #222222;
+}
+
+.profile-photo {
+    width: 85px;
+    height: 85px;
+    min-width: 85px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid #333333;
+}
+
+.profile-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 20%;
+    display: block;
+}
+
+.hero-info {
+    flex: 1;
+    min-width: 0;
+}
+
+.eyebrow {
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: #777777;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 29px;
+    color: #222222;
+    margin: 4px 0;
+}
+
+.subtitle {
+    font-size: 15px;
+    color: #555555;
+    margin-bottom: 8px;
+}
+
+.location {
+    font-size: 13px;
+    color: #666666;
+}
+
+.hero-info p {
+    overflow-wrap: anywhere;
+}
+
+.hero-info a {
+    color: #333333;
+    text-decoration: none;
+}
+
+.hero-info a:hover {
+    text-decoration: underline;
+}
+
+/* SEÇÕES */
+
+.section {
+    margin-top: 30px;
+}
+
+.section h2 {
+    font-size: 19px;
+    color: #222222;
+    border-bottom: 1px solid #cccccc;
+    padding-bottom: 7px;
+    margin-bottom: 15px;
+}
+
+.section p {
+    font-size: 14px;
+    text-align: justify;
+}
+
+.item {
+    margin-bottom: 20px;
+}
+
+.item h3 {
+    font-size: 16px;
+    color: #333333;
+    margin-bottom: 5px;
+}
+
+.item-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.muted {
+    color: #777777;
+    font-size: 13px !important;
+}
+
+/* ETIQUETAS */
+
+.tag {
+    background: #eeeeee;
+    color: #444444;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 11px;
+    white-space: nowrap;
+}
+
+/* LISTAS */
+
+ul {
+    padding-left: 22px;
+    margin-top: 8px;
+}
+
+li {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.plain-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+/* HABILIDADES */
+
+.skills {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+.skills h3 {
+    font-size: 15px;
+    margin-bottom: 8px;
+    color: #333333;
+}
+
+/* RODAPÉ */
+
+footer {
+    text-align: center;
+    border-top: 1px solid #cccccc;
+    margin-top: 35px;
+    padding-top: 20px;
+}
+
+footer p {
+    font-size: 13px;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 10px;
+    }
+
+    .resume {
+        padding: 22px;
+    }
+
+    .hero {
+        gap: 12px;
+        align-items: center;
+    }
+
+    .profile-photo {
+        width: 65px;
+        height: 65px;
+        min-width: 65px;
+    }
+
+    h1 {
+        font-size: 21px;
+    }
+
+    .subtitle {
+        font-size: 13px;
+    }
+
+    .location {
+        font-size: 12px;
+    }
+
+    .hero-info p {
+        font-size: 12px;
+    }
+
+    .skills {
+        grid-template-columns: 1fr;
+    }
+
+    .item-heading {
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+
+}
